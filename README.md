@@ -1,12 +1,84 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🔐 Password Manager
 
-Currently, two official plugins are available:
+A simple and secure password manager built with React, Node.js, Express, and MongoDB.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Add and save passwords
+- 📝 Edit saved entries
+- 🗑️ Delete credentials
+- 📋 Copy to clipboard
+- 🌐 Full-stack web application
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Tailwind CSS
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **UUID Generation:** uuid
+- **Notifications:** react-toastify
+
+---
+
+## 📁 Project Structure
+
+```
+passwordmanager/
+├── server.js           # Backend logic
+├── .env                # MongoDB connection string
+├── package.json
+├── .gitignore
+├── public/
+├── src/
+│   ├── Manager.jsx     # Main component
+│   ├── App.js
+│   └── index.js
+```
+
+---
+
+## ⚙️ Running Locally
+
+### 1. Backend
+
+```bash
+npm install
+node server.js
+```
+
+(Make sure MongoDB is running locally)
+
+### 2. Frontend
+
+If you're using Create React App:
+
+```bash
+npm start
+```
+
+App will run at [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🌍 Environment Variables
+
+Create a `.env` file in root:
+
+```env
+MONGO_URI=mongodb://localhost:27017/passwordManager
+```
+
+---
+
+## 👨‍💻 Author
+
+[GitHub - @astrix-ui](https://github.com/astrix-ui)
+
+---
+
+
